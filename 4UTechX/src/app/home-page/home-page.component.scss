@@ -28,6 +28,7 @@
       margin-left: 90px;
       height: 250px;
       width: 400px;
+      margin-bottom: 40px;
  }
 
  .btn1 {
@@ -111,7 +112,69 @@
     margin-left: 500px;
     font-weight: bold;
     font-size: 50px;
+}
+.col1 {
+  color: white;
+  font-size: 80px;
+  font-weight: bold;
+}
+
+.col2 {
+    font-size: 25px;
+    font-weight: normal;
+}
+.row {
+    padding-top: 40px;
+}
+
+.head2 {
+    font-size: 20px;
+    margin-left: 45px;
+    margin-top: 30px;
+}
+
+.head3 {
+    font-size: 20px;
+    margin-left: 70px;
     
+}
+
+.head4 {
+    font-size: 20px;
+    margin-left: 450px;
     
-  
+}
+
+.btn3 {
+    height: 80px;
+    width: 250px;
+    background-color: white;
+    color: blue;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 0.5cm;
+    border-color: blue;
+    border-width: 5px;
+    margin-left: 650px;
+    margin-top: 40px;
+}
+
+.box3 {
+    margin-top: 40px;
+    margin-left: 600px;
+    font-weight: bold;
+    font-size: 50px;
+}
+.btn4 {
+    height: 80px;
+    width: 250px;
+    background-color: white;
+    color: blue;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 0.5cm;
+    border-color: blue;
+    border-width: 5px;
+    margin-left: 550px;
+    margin-top: 80px;
 }
