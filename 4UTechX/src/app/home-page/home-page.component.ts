@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./home-page.component.scss']
 })
 export class HomePageComponent {
-
+   images = ['../../assets/img/techimg5.png', '../../assets/img/techimg4.png', '../../assets/img/techimg6.png'];
 }

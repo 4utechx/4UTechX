@@ -1,3 +1,99 @@
-<p>home-page works!</p>
-<h1>Hey I am Homepage</h1>
+<ngb-carousel *ngIf="images">
+	<ng-template ngbSlide>
+		<div class="picsum-img-wrapper">
+			<img [src]="images[0]" alt="Random first slide" width="100%" height="800px"/>
+		</div>
+	</ng-template>
+	<ng-template ngbSlide>
+		<div class="picsum-img-wrapper">
+			<img [src]="images[1]" alt="Random second slide" width="100%" height="800px" />
+		</div>
+	</ng-template>
+	<ng-template ngbSlide>
+		<div class="picsum-img-wrapper">
+			<img [src]="images[2]" alt="Random third slide" width="100%" height="800px" />
+		</div>
+	
+	</ng-template>
+</ngb-carousel>
+
+<div class="line1">We offer solutions that enable you to find the right talent, eliminate skills gaps in your organization, provide a development infrastructure  and help
+<p class="line2">drive your business forward.</p></div>
+
+<h1 class="heading1">The 4UTechX Advantage</h1>
+
+
+<div class="container">
+	<div class="row">
+	  <div class="col-sm-8">
+		<p>An efficient hiring and staffing process, ready access to a vast database of talent, custom-built Centres of Excellence (CoE) and secure state-of-the-art infrastructure that complies with our clients’ standards gives Helius a definite advantage over its competitors.</p>
+
+        <p class="line3">Also, our agility in responding quickly to client needs, flexibility in terms of adapting to fast-changing technological landscapes and our transparency towards our clients and employees help deliver effective and disruptive solutions to our clients’ unique business goals.</p>
+	  </div>
+	 
+	  <div class="col-sm-2">
+		<img src="../../assets/img/diamondTechX.png" width="400px" height="200px">
+	  </div>
+	</div>
+</div>
+
+<button type="button" class="btn1">Know More</button>
+
+<div class="card1">Our Offerings
+  <div>
+	<div class="card-group">
+		<div class="card">
+		  <img class="card-img-top" src="../../assets/img/staffingService.png" alt="Card image cap">
+		  <div class="card-body">
+			<h5 class="card-title">Staffing Services</h5>
+			<p class="card-text">Our proven track record of hiring and staffing can help you find the right people with the right skill to fulfill your company’s unique needs.</p>
+		  </div>
+		  <button type="button" class="btn2">Know More</button>
+		</div>
+		<div class="card">
+		  <img class="card-img-top" src="../../assets/img/centerOfExcelence.png" alt="Card image cap" height="300px">
+		  <div class="card-body">
+			<h5 class="card-title">Centres of Excellence</h5>
+			<p class="card-text">Our expertise in creating Centres of Excellence can help bridge the skills gaps in your company and take it to the next level.</p>
+		  </div>
+		  <button type="button" class="btn2">Know More</button>
+		</div>
+		<div class="card">
+		  <img class="card-img-top" src="../../assets/img/talent.png" alt="Card image cap">
+		  <div class="card-body">
+			<h5 class="card-title">Talent & Infrastructure on Cloud</h5>
+			<p class="card-text">Our indigenous TI Cloud offering can help you provide the talent and infrastructure for your company thus lowering your onsite costs.</p>
+		  </div>
+		    <button type="button" class="btn2">Know More</button>
+		</div>
+	  </div>
+  </div>
+</div>
+
+<div class="box1">
+  <h1 class="box2">4UTechX at a Glance</h1>
+    <div class="container">
+		<div class="row">
+			<div class="col-sm-3">
+                    1
+			</div>
+			<div class="col-sm-3">
+				  2
+			</div>
+			<div class="col-sm-3">
+				  3
+			</div>
+			<div class="col-sm-3">
+				 4
+			</div>
+		</div>
+
+	</div>
+	
+</div>
+
+<div>
+	<h1 class="head1">The TechnoPro Connection</h1>
+</div>
+	
 <app-footer></app-footer>
