@@ -160,21 +160,25 @@
 }
 
 .box3 {
-    margin-top: 40px;
+    margin-top: 60px;
     margin-left: 600px;
     font-weight: bold;
     font-size: 50px;
 }
 .btn4 {
     height: 80px;
-    width: 250px;
+    width: 300px;
     background-color: white;
     color: blue;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: bold;
     border-radius: 0.5cm;
     border-color: blue;
     border-width: 5px;
-    margin-left: 550px;
+    margin-left: 500px;
     margin-top: 80px;
+}
+
+.container {
+    height: 400px;
 }
