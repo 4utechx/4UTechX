@@ -47,10 +47,12 @@
 
 .divStyle{
     background-color: aquamarine;
+    height: 900px;
 }
 .coreVal{
     margin-left: 40%;
-    margin-top: 50px;
+    margin-top: 100px;
+    padding-top: 50px;
     font-size: 50px;
     font-weight: bold;
 }
@@ -61,10 +63,32 @@
     padding-top: 40px;
 }
 
+.topStyle {
+    color: blue;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    
+}
+.topStyle1{
+    margin-top: 70px;
+}
 .imgDesc {
     padding-left: 150px;
 }
-.topStyle {
-    color: blue;
-    padding-top: 50px;
+.corePara {
+    margin-left: -160px;
+    font-size: 20px;
+    margin-top: -5px;
+}
+.corePara1 {
+    margin-top: 40px;
+}
+.flexPara1 {
+    padding-left: 30px;
+}
+.flexPara2{
+    padding-left: 10px;
+}
+.flexPara3{
+    padding-left: 120px;
 }
