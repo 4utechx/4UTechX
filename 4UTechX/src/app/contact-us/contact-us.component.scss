@@ -6,28 +6,77 @@
     color: #666 !important;
     margin-left: 3%;
 }
-
+.DivWidth{
+    height: 1050px;
+}
+.Ouroffice {
+    margin-top: 60px;
+    font-size: 50px;
+    font-weight: bold;
+    margin-right: 40px;
+}
 .cityHeader{
-    color:red;
-    font-size: 30px;
-    font-weight: 100px !important;
+    color:blue;
+    font-size: 25px;
+    font-weight: bold !important;
     font-style: normal;
+    margin-top: 30px;
 }
 .brandTitle{
     color:black;
-    font-size: 15px;
-    font-weight: 100px !important;
-    font-style: normal;
+    font-size: 20px;
+    font-weight: bold;
+  
+}
+
+.addressTitle{
+    font-size: 16px;
+}
+.contactBtn{
+    background-color:#0a58ca;
+    width: 250px;
+    height: 60px;
+    border-radius: 0.5cm;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 20px;
+    color: white;
+}
+
+.canHelp {
+    margin-top: 180px;
+    margin-left: 60px;
+    
 }
 .contactHeading{
     color:rgb(19, 5, 5);
     font-size: 20px;
     padding-top: 15px;
+    margin-left: 50px;
 }
 .contentInput{
-    width:300px;
+    width:400px;
+    height: 40px;
+    margin-left: 50px;
+    background-color:skyblue;
 }
 .btnClass{
   padding-top: 20px;
   padding-bottom: 20px;
+}
+.form-control{
+    margin-left: 50px;
+    background-color: skyblue;
+}
+.FormBtn {
+    height: 80px;
+    width: 200px;
+    border-color: #0a58ca;
+    font-size: 25px;
+    background-color: white;
+    color:#0a58ca ;
+    border-radius: 0.2cm;
+    border-width: 4PX;
+    margin-left: 50px;
+    margin-top: 30px;
 }
