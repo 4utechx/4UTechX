@@ -9,6 +9,7 @@ import { FooterComponent } from './footer/footer.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { CareersComponent } from './careers/careers.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     HomePageComponent,
     FooterComponent,
     ContactUsComponent,
-    AboutUsComponent
+    AboutUsComponent,
+    CareersComponent
   ],
   imports: [
     BrowserModule,
