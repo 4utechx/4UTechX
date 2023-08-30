@@ -1,7 +1,19 @@
 const mongoose = require("mongoose");
 
 const TechXSchema = new mongoose.Schema({
-    name: {
+    firstname: {
+        type: String,
+        required: true,
+    },
+    lastname: {
+        type: String,
+        required: true,
+    },
+    company: {
+        type: String,
+        required: true,
+    },
+    title: {
         type: String,
         required: true,
     },
@@ -12,16 +24,9 @@ const TechXSchema = new mongoose.Schema({
     },
     phone: {
         type: Number,
+        unique: true,
         required: true,
     },
-    password: {
-         type: String,
-         required: true,
-    },
-    confirmPassword: {
-        type: String,
-        required: true,
-    }
 });
 
 const empCollection = new mongoose.model("empcollection",TechXSchema);
