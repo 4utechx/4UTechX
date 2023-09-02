@@ -1,31 +1,21 @@
 const express = require("express");
 const app= express();
-app.use(express.json());
-let port= 3000;
 
-require("./servers/db/db");
-const empCollection = require("./servers/models/model");
+const router=express.Router();
+app.use(router);
+app.use(express.json());
+
+let port= 3000 ||process.env.port;
+
+require("./servers/db/db"); //To Connect with mongodb
+
+const {postFeedbackData, getFeedbackData} = require("./servers/db/dbController"); //Calling controller functions
 
 app.use(express.urlencoded({extended : false}));
 
-app.post("/feedback", async (req, res)=>{
-         const Feedback = new empCollection({
-            firstname : req.body.firstname,
-            lastname : req.body.lastname,
-            company : req.body.company,
-            title : req.body.title,
-            email : req.body.email,
-            phone : req.body.phone,
-         });
+router.post("/feedback", postFeedbackData);
 
-         const postData = await Feedback.save();
-         if(postData){
-         res.send(postData);
-         }else{
-          res.send("Error in saving data to database");
-         }
-      }
-    )
+router.get("/feedbacks", getFeedbackData)
   
 app.get("/", (req, res)=>{
     res.send("Hello from 4UTechX");
@@ -34,3 +24,4 @@ app.get("/", (req, res)=>{
 app.listen(port, ()=>{
     console.log(`listing to the port ${port}`);
 })
+

@@ -45,23 +45,25 @@
         <div class="row">
           <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6">
             <div class="contactHeading">First Name</div>
-            <input type="text" id="firstName" class="contentInput">
+            <input type="text" [(ngModel)]="firstname" id="firstName" class="contentInput">
             
             <div class="contactHeading">Company</div>
-            <input type="text" id="company" class="contentInput">
+            <input type="text" [(ngModel)]="company" id="company" class="contentInput">
           
            <div class="contactHeading">Email address</div>
-            <input type="email" class="contentInput" id="email" placeholder="name@example.com">
+            <input type="email" [(ngModel)]="email" class="contentInput" id="email" placeholder="name@example.com">
 
           </div>
           <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6">
 
            <div class="contactHeading">Last Name</div>
-            <input type="text"  id="lastName" class="contentInput">
+            <input type="text" [(ngModel)]="lastname" id="lastName" class="contentInput">
+
             <div class="contactHeading">Title</div>
-            <input type="text"  id="title" class="contentInput">
+            <input type="text" [(ngModel)]="title" id="title" class="contentInput">
+
             <div class="contactHeading">Phone number(optional)</div>
-            <input type="text"  id="phone" class="contentInput">
+            <input type="text" [(ngModel)]="phoneNum" id="phone" class="contentInput">
 
           </div>
         </div>
@@ -69,11 +71,11 @@
         <div class="row">
           <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
             <div class="contactHeading">Tell Us What You Need Our Help On</div>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"  [(ngModel)]="needHelp"></textarea>
           </div>
         </div>
 
-        <button type="button" class="FormBtn">SUBMIT</button>
+        <button type="button" class="FormBtn" (click)="myFunc()">SUBMIT</button>
         <!-- <div class="row btnClass">
           <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
           <input type="checkbox" class="btn-check" id="btn-check-2" checked autocomplete="off">
