@@ -5,6 +5,10 @@ const router=express.Router();
 app.use(router);
 app.use(express.json());
 
+const path = __dirname + './views/dist/4-utech-x';
+
+app.use(express.static(path));
+
 let port= 3000 ||process.env.port;
 
 require("./servers/db/db"); //To Connect with mongodb
